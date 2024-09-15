@@ -1,5 +1,6 @@
 //Coding Challenge 4 
-// Task 1
+// Task 1 Create an Inventory Array of Product Objects
+
 const inventory = [
 
     { name: 'Laptop', price: 1200, quantity: 10, lowStockLevel: 3 },
@@ -13,4 +14,18 @@ const inventory = [
     { name: 'Smartwatch', price: 250, quantity: 3, lowStockLevel: 1 }
     
     ];
+
+    console.log(inventory)
     
+// Task 2 Create a Function to Display Product Details
+
+inventory.forEach = quantity
+function displayProductDetails(inventory) {   
+    let stockstatus = quantity > lowStockLevel ? "In Stock" : "Low Stock"};
+    
+console.log(`Product: ${"name"}`);
+console.log(`Price : $${price}`);
+console.log(`quantity : ${quantity}`);
+console.log(`stock status : ${stockstatus}`);
+
+
