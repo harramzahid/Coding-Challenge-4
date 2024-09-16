@@ -31,3 +31,30 @@ function displayProductDetails(inventory) {
     inventory.forEach(inventory => displayProductDetails(inventory));
 
 //Task 3 Create a function to update product stock after sales
+function updateStock(quantity, unitsSold) {
+     inventory.quantity = newQuantity = (inventory.quantity -= salesData.unitsSold);
+    return quantity;
+}
+let stockData = [
+    { product: "Laptop", unitsSold: 7 },   
+    { product: "Smartphone", unitsSold: 3 },
+    { product: "Tablet", unitsSold: 5}
+   ];
+
+   let updatedstockData = inventory.map(quantity => quantity - stockData.unitsSold);
+   console.log(updatedstockData)
+
+    inventory.forEach(salesData => updateStock(quantity, unitsSold));
+console.log(updatedStock);
+
+    function displayProductDetails(inventory) {
+        if (inventory.quantity > inventory.lowStockLevel) {
+            console.log(`Product ${inventory.name} is priced at $${inventory.price} and is in stock`);
+        } else if (inventory.quantity < inventory.lowStockLevel)   {
+            console.log(`Product ${inventory.name} is priced at $${inventory.price} and is low in stock`);
+        } else {
+            console.log(`product${inventory.name} is priced at $${inventory.price} and is out of stock`);
+        } 
+    }
+    inventory.forEach(inventory => displayProductDetails(inventory));
+
