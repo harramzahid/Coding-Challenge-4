@@ -80,7 +80,7 @@ function processSale(name, unitsSold){
     const inventory = name.filter((name) => unitsSold >0);
     console.long(`Products that sold are $[name]`);
         if (unitsSold > 0){
-    return function updateStock(quantity, unitsSold);
+    return function updateStock(quantity, unitsSold)
     } else if (unitsSold <0 ) {
 console.log (`error, product ${inventory.name} is unavailable`);
 }
