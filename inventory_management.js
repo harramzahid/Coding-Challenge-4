@@ -57,4 +57,11 @@ console.log(updatedStock);
         } 
     }
     inventory.forEach(inventory => displayProductDetails(inventory));
+// Task 4 Function to check low stock products
+function checkLowStock(inventory) {
+        if (inventory.quantity < inventory.lowStockLevel) { 
+        console.log(`Product ${inventory.name} is low in Stock`);
+        } 
+    };
+inventory.forEach(inventory => checkLowStock(inventory));
 
