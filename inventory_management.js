@@ -19,13 +19,15 @@ const inventory = [
     
 // Task 2 Create a Function to Display Product Details
 
-inventory.forEach = quantity
-function displayProductDetails(inventory) {   
-    let stockstatus = quantity > lowStockLevel ? "In Stock" : "Low Stock"};
-    
-console.log(`Product: ${"name"}`);
-console.log(`Price : $${price}`);
-console.log(`quantity : ${quantity}`);
-console.log(`stock status : ${stockstatus}`);
+function displayProductDetails(inventory) {
+    if (inventory.quantity > inventory.lowStockLevel) {
+        console.log(`Product ${inventory.name} is priced at $${inventory.price} and is in stock`);
+    } else {
+        console,log(`Product ${inventory.name} is priced at $${inventory.price} and is out of stock`);
+    }
+}
 
 
+    inventory.forEach(inventory => displayProductDetails(inventory));
+
+//Task 3 Create a function to update product stock after sales
