@@ -72,5 +72,23 @@ for (let i = 0; <inventory.length; i++) {
     totalInventoryValue += inventory[i].price;
 }
 console.log(`total inventory value: $${totalInventoryValue}`);
+//Task 6 Create a Function to Process a Sale
+// creating a mini database for stockData that sold
+let stockData = [
+    { name: "Laptop", unitsSold: 7 },   
+    { name: "Smartphone", unitsSold: 3 },
+    { name: "Tablet", unitsSold: 5}
+   ];
+function processSale(name, unitsSold){
+    // using filter to get the names of the products that sold
+    const inventory = name.filter((name) => unitsSold >0);
+    console.long(`Products that sold are $[name]`);
+        if (unitsSold > 0){
+    return function updateStock(quantity, unitsSold);
+    } else if (unitsSold <0 ) {
+console.log (`error, product ${inventory.name} is unavailable`);
+}
+}; 
+
 
 
